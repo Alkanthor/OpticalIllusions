@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: dd05ed93998451b479926a3e36f70428
-timeCreated: 1508681551
+guid: 519ff1af75537c343955a90d34f55838
+timeCreated: 1509633559
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Black_White_illusion
+    100004: Black_White_illusion_1
+    100006: CINEMA_4D_Editor
+    400000: //RootNode
+    400002: Black_White_illusion
+    400004: Black_White_illusion_1
+    400006: CINEMA_4D_Editor
+    2300000: Black_White_illusion
+    2300002: Black_White_illusion_1
+    3300000: Black_White_illusion
+    3300002: Black_White_illusion_1
+    4300000: Black_White_illusion
+    4300002: Black_White_illusion_1
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0

@@ -1,10 +1,20 @@
 fileFormatVersion: 2
-guid: f2c4b724960cd0946a79b5b9d089468a
-timeCreated: 1508686569
+guid: ddf3849c59334e54a9ee5bd36e85ce78
+timeCreated: 1509633561
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: CINEMA_4D_Editor
+    100002: RebelEmpire
+    100004: //RootNode
+    400000: CINEMA_4D_Editor
+    400002: RebelEmpire
+    400004: //RootNode
+    2300000: RebelEmpire
+    3300000: RebelEmpire
+    4300000: RebelEmpire
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0

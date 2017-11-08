@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/AmesRooms.unity
+- path: Assets/Scenes/FollowingEyes.unity
   isLoaded: 1
   isActive: 1

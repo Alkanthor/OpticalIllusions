@@ -25,13 +25,13 @@ public class SculptureScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.N))
         {
             activeIndex++;
             activeIndex = mod(activeIndex, transform.childCount);
             ChangeModel();
         }
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.M))
         {
             activeIndex--;
             activeIndex = mod(activeIndex,transform.childCount);

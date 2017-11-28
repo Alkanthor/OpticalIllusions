@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/PenroseTriangle.unity
+- path: Assets/Scenes/MagneticSlopes.unity
   isLoaded: 1
   isActive: 1

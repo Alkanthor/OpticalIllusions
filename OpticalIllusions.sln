@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpticalIllusions.CSharp", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpticalIllusions.CSharp.Editor.Plugins", "OpticalIllusions.CSharp.Editor.Plugins.csproj", "{52150EC2-32DB-7A94-35C1-50132C5C8C31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpticalIllusions.CSharp.Editor", "OpticalIllusions.CSharp.Editor.csproj", "{C9B3F842-98FB-C507-DEFD-E0A5B2166025}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{52150EC2-32DB-7A94-35C1-50132C5C8C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52150EC2-32DB-7A94-35C1-50132C5C8C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52150EC2-32DB-7A94-35C1-50132C5C8C31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9B3F842-98FB-C507-DEFD-E0A5B2166025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9B3F842-98FB-C507-DEFD-E0A5B2166025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9B3F842-98FB-C507-DEFD-E0A5B2166025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9B3F842-98FB-C507-DEFD-E0A5B2166025}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

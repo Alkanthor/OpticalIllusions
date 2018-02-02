@@ -9,7 +9,7 @@ public class SculptureScript : MonoBehaviour
     private GameObject[] sculptures;
     private List<GameObject> balls;
     private Vector3[] origins;
-    private int activeIndex;
+    public int activeIndex;
 
     // Use this for initialization
     void Start()
@@ -32,15 +32,12 @@ public class SculptureScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.N))
         {
-            activeIndex++;
-            activeIndex = mod(activeIndex, transform.childCount);
-            ChangeModel();
+            NextModel();
+            
         }
         if (Input.GetKeyDown(KeyCode.M))
         {
-            activeIndex--;
-            activeIndex = mod(activeIndex, transform.childCount);
-            ChangeModel();
+            PreviousModel();
         }
     }
 
@@ -79,4 +76,19 @@ public class SculptureScript : MonoBehaviour
             balls[i].transform.localPosition = origins[i];
         }
     }
+
+    public void NextModel()
+    {
+        activeIndex++;
+        activeIndex = mod(activeIndex, transform.childCount);
+        ChangeModel();
+    }
+
+    public void PreviousModel()
+    {
+        activeIndex--;
+        activeIndex = mod(activeIndex, transform.childCount);
+        ChangeModel();
+    }
+
 }

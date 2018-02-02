@@ -1411,15 +1411,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: cf34e43db9b60dc469a72d5c9a4fff94, type: 3}
       propertyPath: m_LocalScale.x
-      value: 75
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: cf34e43db9b60dc469a72d5c9a4fff94, type: 3}
       propertyPath: m_LocalScale.y
-      value: 75
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: cf34e43db9b60dc469a72d5c9a4fff94, type: 3}
       propertyPath: m_LocalScale.z
-      value: 75
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: cf34e43db9b60dc469a72d5c9a4fff94, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y

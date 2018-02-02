@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Vases.unity
+- path: Assets/Scenes/YesNo.unity
   isLoaded: 1
   isActive: 1

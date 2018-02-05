@@ -3,14 +3,16 @@ guid: a26c17301dfdc2f4cbb1426e2e150790
 timeCreated: 1507734776
 licenseType: Free
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: CINEMA_4D_Editor
     100002: //RootNode
     100004: yesno
+    100006: Camera
     400000: CINEMA_4D_Editor
     400002: //RootNode
     400004: yesno
+    400006: Camera
     2300000: yesno
     3300000: yesno
     4300000: yesno
@@ -37,6 +39,7 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -44,7 +47,10 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -60,6 +66,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:

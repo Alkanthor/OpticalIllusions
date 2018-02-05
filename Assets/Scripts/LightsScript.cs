@@ -28,18 +28,12 @@ public class LightsScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            activeIndex++;
-            activeIndex = mod(activeIndex, transform.childCount);
-            Lights();
-            light.SetActive(!light.activeSelf);
-        }
-
     }
 
-    private void Lights()
+    public void TurnLights()
     {
+        activeIndex++;
+        activeIndex = mod(activeIndex, transform.childCount);
         for (int i = 0; i < transform.childCount; i++)
         {
             if (i == activeIndex)
@@ -47,6 +41,7 @@ public class LightsScript : MonoBehaviour
             else
                 rooms[i].SetActive(false);
         }
+        light.SetActive(!light.activeSelf);
     }
 
     private int mod(int x, int m)

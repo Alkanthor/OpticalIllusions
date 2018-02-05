@@ -8,6 +8,8 @@ public class VIVEScript : MonoBehaviour {
 
     public SculptureScript sculptureScript;
 
+    public LightsScript lightsScript;
+
     private bool animate;
 
     // 1
@@ -34,6 +36,12 @@ public class VIVEScript : MonoBehaviour {
 
             animate = !animate;
             animator.SetBool("Animate", animate);
+        }
+
+        if (Controller.GetPressDown(SteamVR_Controller.ButtonMask.Grip))
+        {
+            Debug.Log(gameObject.name + " Grip Press");
+            lightsScript.TurnLights();
         }
 
         if (Controller.GetPress(SteamVR_Controller.ButtonMask.Touchpad))

@@ -96,7 +96,6 @@
     <Compile Include="Assets\MagicMirror\Prefab\MirrorCameraScript.cs" />
     <Compile Include="Assets\MagicMirror\Prefab\MirrorReflectionScript.cs" />
     <Compile Include="Assets\MagicMirror\Prefab\MirrorScript.cs" />
-    <Compile Include="Assets\Materials\MirrorReflection.cs" />
     <Compile Include="Assets\OVR\Scripts\Composition\OVRCameraComposition.cs" />
     <Compile Include="Assets\OVR\Scripts\Composition\OVRComposition.cs" />
     <Compile Include="Assets\OVR\Scripts\Composition\OVRCompositionUtil.cs" />
@@ -147,6 +146,7 @@
     <Compile Include="Assets\OVR\Scripts\Util\OVRTrackedRemote.cs" />
     <Compile Include="Assets\OVR\Scripts\Util\OVRWaitCursor.cs" />
     <Compile Include="Assets\Scripts\LightsScript.cs" />
+    <Compile Include="Assets\Scripts\MirrorReflection.cs" />
     <Compile Include="Assets\Scripts\RotateScript.cs" />
     <Compile Include="Assets\Scripts\SculptureScript.cs" />
     <Compile Include="Assets\Scripts\VIVEScript.cs" />

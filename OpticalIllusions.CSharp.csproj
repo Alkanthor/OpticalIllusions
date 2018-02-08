@@ -149,6 +149,8 @@
     <Compile Include="Assets\Scripts\LightsScript.cs" />
     <Compile Include="Assets\Scripts\RotateScript.cs" />
     <Compile Include="Assets\Scripts\SculptureScript.cs" />
+    <Compile Include="Assets\Scripts\VIVEScript.cs" />
+    <Compile Include="Assets\Scripts\ViveSwipeDetector.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />

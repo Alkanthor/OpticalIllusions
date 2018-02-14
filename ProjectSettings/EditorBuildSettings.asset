@@ -4,4 +4,25 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Gallery.unity
+    guid: 2df9921a025139244860a2b945784945
+  - enabled: 1
+    path: Assets/Scenes/AmbiguousCylinders.unity
+    guid: ed28e583cc75e244d81a125073db6379
+  - enabled: 1
+    path: Assets/Scenes/AmesRooms.unity
+    guid: 74e21e2c3d7835e4a8bc824da55c632f
+  - enabled: 1
+    path: Assets/Scenes/FollowingEyes.unity
+    guid: 4b02bad40d6b495499f1c94c9c1d87b4
+  - enabled: 1
+    path: Assets/Scenes/MagneticSlopes.unity
+    guid: 58290cd1a24244e4dbb47ba396bf3db6
+  - enabled: 1
+    path: Assets/Scenes/PenroseTriangle.unity
+    guid: 8426f8b6f67a8d540be9b47e76017210
+  - enabled: 1
+    path: Assets/Scenes/Vases.unity
+    guid: c66d43027102f4742a51b7b456267dbb

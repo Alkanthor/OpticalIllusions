@@ -1,6 +1,7 @@
 ﻿//======= Copyright (c) Valve Corporation, All rights reserved. ===============
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public struct PointerEventArgs
 {
@@ -67,6 +68,12 @@ public class SteamVR_LaserPointer : MonoBehaviour
     {
         if (PointerIn != null)
             PointerIn(this, e);
+       if(e.target.name.Contains("painting-"))
+        {
+            var newScene = e.target.name.Replace("painting-", "");
+            Debug.Log(newScene);
+            SceneManager.LoadScene("Gallery");
+        }
     }
 
     public virtual void OnPointerOut(PointerEventArgs e)

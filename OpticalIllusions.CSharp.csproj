@@ -162,6 +162,7 @@
     <Compile Include="Assets\Scripts\MirrorReflection.cs" />
     <Compile Include="Assets\Scripts\RotateScript.cs" />
     <Compile Include="Assets\Scripts\SculptureScript.cs" />
+    <Compile Include="Assets\Scripts\SettingsScript.cs" />
     <Compile Include="Assets\Scripts\VIVEScript.cs" />
     <Compile Include="Assets\Scripts\ViveSwipeDetector.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />

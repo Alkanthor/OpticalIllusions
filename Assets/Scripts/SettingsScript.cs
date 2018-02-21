@@ -16,6 +16,7 @@ public class SettingsScript : MonoBehaviour
 	void Start ()
 	{
 	    enableVR = true;
+        UnityEngine.VR.VRSettings.enabled = true;
         playerVR = GameObject.Find("PlayerVR");
         fpsController = GameObject.Find("FPSController");
         floor = GameObject.Find("floor");
@@ -31,6 +32,7 @@ public class SettingsScript : MonoBehaviour
 	    if (Input.GetKeyDown(KeyCode.Space))
 	    {
 	        enableVR = !enableVR;
+            UnityEngine.VR.VRSettings.enabled = !UnityEngine.VR.VRSettings.enabled;
             TurnVR();
         }
     }

@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpticalIllusions", "OpticalIllusions.csproj", "{E5DBE579-3BA1-C273-2056-7FD358A51AA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpticalIllusions.CSharp.Plugins", "OpticalIllusions.CSharp.Plugins.csproj", "{40F6CA4B-ABF0-D4A9-35ED-B3CCB8610DC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpticalIllusions.Plugins", "OpticalIllusions.Plugins.csproj", "{61C2F2C5-EEC7-82AD-FBD2-E76123BBBCC1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpticalIllusions.CSharp", "OpticalIllusions.CSharp.csproj", "{FC29DF3E-218C-6B34-54A0-85378011F579}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpticalIllusions.Editor.Plugins", "OpticalIllusions.Editor.Plugins.csproj", "{99FF5F51-EB1A-AD99-8B59-B1CCCE01EDB8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpticalIllusions.CSharp.Editor.Plugins", "OpticalIllusions.CSharp.Editor.Plugins.csproj", "{52150EC2-32DB-7A94-35C1-50132C5C8C31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpticalIllusions.Editor", "OpticalIllusions.Editor.csproj", "{A5861BDB-9CEB-6DF9-9C02-536C15BFD314}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpticalIllusions.CSharp.Editor", "OpticalIllusions.CSharp.Editor.csproj", "{C9B3F842-98FB-C507-DEFD-E0A5B2166025}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,22 +15,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E5DBE579-3BA1-C273-2056-7FD358A51AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E5DBE579-3BA1-C273-2056-7FD358A51AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E5DBE579-3BA1-C273-2056-7FD358A51AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E5DBE579-3BA1-C273-2056-7FD358A51AA2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{61C2F2C5-EEC7-82AD-FBD2-E76123BBBCC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{61C2F2C5-EEC7-82AD-FBD2-E76123BBBCC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{61C2F2C5-EEC7-82AD-FBD2-E76123BBBCC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{61C2F2C5-EEC7-82AD-FBD2-E76123BBBCC1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{99FF5F51-EB1A-AD99-8B59-B1CCCE01EDB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{99FF5F51-EB1A-AD99-8B59-B1CCCE01EDB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{99FF5F51-EB1A-AD99-8B59-B1CCCE01EDB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{99FF5F51-EB1A-AD99-8B59-B1CCCE01EDB8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A5861BDB-9CEB-6DF9-9C02-536C15BFD314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A5861BDB-9CEB-6DF9-9C02-536C15BFD314}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A5861BDB-9CEB-6DF9-9C02-536C15BFD314}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A5861BDB-9CEB-6DF9-9C02-536C15BFD314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40F6CA4B-ABF0-D4A9-35ED-B3CCB8610DC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40F6CA4B-ABF0-D4A9-35ED-B3CCB8610DC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40F6CA4B-ABF0-D4A9-35ED-B3CCB8610DC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40F6CA4B-ABF0-D4A9-35ED-B3CCB8610DC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC29DF3E-218C-6B34-54A0-85378011F579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC29DF3E-218C-6B34-54A0-85378011F579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC29DF3E-218C-6B34-54A0-85378011F579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC29DF3E-218C-6B34-54A0-85378011F579}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52150EC2-32DB-7A94-35C1-50132C5C8C31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52150EC2-32DB-7A94-35C1-50132C5C8C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52150EC2-32DB-7A94-35C1-50132C5C8C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52150EC2-32DB-7A94-35C1-50132C5C8C31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9B3F842-98FB-C507-DEFD-E0A5B2166025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9B3F842-98FB-C507-DEFD-E0A5B2166025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9B3F842-98FB-C507-DEFD-E0A5B2166025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9B3F842-98FB-C507-DEFD-E0A5B2166025}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

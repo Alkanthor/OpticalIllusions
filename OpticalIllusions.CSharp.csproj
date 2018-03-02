@@ -158,6 +158,7 @@
     <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
     <Compile Include="Assets\OVR\Scripts\Util\OVRTrackedRemote.cs" />
     <Compile Include="Assets\OVR\Scripts\Util\OVRWaitCursor.cs" />
+    <Compile Include="Assets\Scripts\CylindersSettingsScript.cs" />
     <Compile Include="Assets\Scripts\LightsScript.cs" />
     <Compile Include="Assets\Scripts\MirrorReflection.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />

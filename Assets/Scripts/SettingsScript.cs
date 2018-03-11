@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class SettingsScript : MonoBehaviour
@@ -16,10 +17,11 @@ public class SettingsScript : MonoBehaviour
 	void Start ()
 	{
 	    enableVR = true;
-        UnityEngine.VR.VRSettings.enabled = true;
+        UnityEngine.XR.XRSettings.enabled = true;
         playerVR = GameObject.Find("PlayerVR");
         fpsController = GameObject.Find("FPSController");
         floor = GameObject.Find("floor");
+
 
         playerVR.SetActive(true);
         fpsController.SetActive(false);
@@ -32,7 +34,7 @@ public class SettingsScript : MonoBehaviour
 	    if (Input.GetKeyDown(KeyCode.Space))
 	    {
 	        enableVR = !enableVR;
-            UnityEngine.VR.VRSettings.enabled = !UnityEngine.VR.VRSettings.enabled;
+            UnityEngine.XR.XRSettings.enabled = !UnityEngine.XR.XRSettings.enabled;
             TurnVR();
         }
     }

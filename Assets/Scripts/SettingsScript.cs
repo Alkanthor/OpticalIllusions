@@ -11,6 +11,8 @@ public class SettingsScript : MonoBehaviour
     private GameObject playerVR;
     private GameObject fpsController;
 
+    private GameObject controllerLeft;
+    private GameObject controllerRight;
     private GameObject floor;
 
 	// Use this for initialization
@@ -22,6 +24,11 @@ public class SettingsScript : MonoBehaviour
         fpsController = GameObject.Find("FPSController");
         floor = GameObject.Find("floor");
 
+        controllerLeft = GameObject.Find("Controller (left)");
+        controllerRight = GameObject.Find("Controller (right)");
+
+        controllerLeft.SetActive(true);
+        controllerRight.SetActive(true);
 
         playerVR.SetActive(true);
         fpsController.SetActive(false);

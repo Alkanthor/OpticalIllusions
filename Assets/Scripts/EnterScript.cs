@@ -19,8 +19,8 @@ public class EnterScript : MonoBehaviour
 	void Update () {
         if (settingsScript.enableVR)
         {
-            player = GameObject.Find("PlayerVR");
-            if (Vector3.Distance(transform.position, player.transform.position) < 0.5)
+            player = GameObject.Find("Camera (eye)");
+            if (Vector3.Distance(transform.position, player.transform.position) < 1.5)
             {
                 Debug.Log("Loading : " + this.transform.parent.name.Replace("painting-", ""));
                 Application.LoadLevel(this.transform.parent.name.Replace("painting-",""));

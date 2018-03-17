@@ -6,7 +6,7 @@ using UnityEngine;
 public class SculptureScript : MonoBehaviour
 {
 
-    private GameObject[] sculptures;
+    public GameObject[] sculptures;
     private List<GameObject> balls;
     private Vector3[] origins;
     public int activeIndex;
@@ -88,6 +88,12 @@ public class SculptureScript : MonoBehaviour
     {
         activeIndex--;
         activeIndex = mod(activeIndex, transform.childCount);
+        ChangeModel();
+    }
+
+    public void LoadModel(int index)
+    {
+        activeIndex = index;
         ChangeModel();
     }
 

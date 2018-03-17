@@ -368,6 +368,7 @@
     <Compile Include="Assets\Scripts\MirrorReflection.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\RotateScript.cs" />
+    <Compile Include="Assets\Scripts\SceneFlowScript.cs" />
     <Compile Include="Assets\Scripts\SculptureScript.cs" />
     <Compile Include="Assets\Scripts\SettingsScript.cs" />
     <Compile Include="Assets\Scripts\VIVEScript.cs" />

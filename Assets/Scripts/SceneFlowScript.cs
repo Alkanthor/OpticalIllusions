@@ -19,10 +19,21 @@ public class SceneFlowScript : MonoBehaviour
     void Start()
     {
         sculptureScript = GameObject.Find("Sculpture").GetComponent<SculptureScript>();
-        animator = GameObject.Find("Sculpture").GetComponent<Animator>();
+        SetAnimator();
+
+        Debug.Log("animate");
 
         animator.SetTrigger("Animate");
         modelIndex = 0;
+    }
+
+    private void SetAnimator()
+    {
+        animator = GameObject.Find("Sculpture").GetComponent<Animator>();
+        if (animator == null)
+        {
+            animator = GameObject.Find("Sculpture").transform.GetChild(modelIndex).GetComponent<Animator>();
+        }
     }
 
     // Update is called once per frame
@@ -37,6 +48,7 @@ public class SceneFlowScript : MonoBehaviour
             animator.SetTrigger("Animate");
             sculptureScript.NextModel();
             modelIndex++;
+            SetAnimator();
         }
     }
 }

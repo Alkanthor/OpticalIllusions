@@ -25,7 +25,6 @@ public class SculptureScript : MonoBehaviour
                 sculptures[i].SetActive(false);
         }
         SetBallsOrigin();
-
     }
 
     void Update()

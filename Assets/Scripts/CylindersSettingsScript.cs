@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CylindersSettingsScript : MonoBehaviour {
+public class CylindersSettingsScript : SettingsScript {
 
     private GameObject VrMirror;
     private GameObject FpsMirror;
@@ -13,16 +13,16 @@ public class CylindersSettingsScript : MonoBehaviour {
          VrMirror = GameObject.Find("VRmirror");
         FpsMirror = GameObject.Find("FPSmirror");
 
-        VrMirror.SetActive(true);
-        FpsMirror.SetActive(false);
+        VrMirror.SetActive(enableVR);
+        FpsMirror.SetActive(!enableVR);
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-                VrMirror.SetActive(!VrMirror.activeSelf);
-                FpsMirror.SetActive(!FpsMirror.activeSelf);
+                VrMirror.SetActive(enableVR);
+                FpsMirror.SetActive(!enableVR);
         }
     }
 }

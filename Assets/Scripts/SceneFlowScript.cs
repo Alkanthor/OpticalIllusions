@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SceneFlowScript : MonoBehaviour
 {
-
     // Use this for initialization
     public Animator animator;
 
@@ -37,18 +36,20 @@ public class SceneFlowScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        if (modelIndex == sculptureScript.sculptures.Length)
-        {
-            Application.LoadLevel("Gallery");
-        }
-        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("End"))
+
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("End"))
         {
             animator.SetTrigger("Animate");
-            sculptureScript.NextModel();
             modelIndex++;
-            SetAnimator();
+            if (modelIndex < sculptureScript.sculptures.Length)
+                sculptureScript.NextModel();
+            else
+            {
+                Application.LoadLevel("Menu");
+            }
+            //SetAnimator();
         }
     }
 }

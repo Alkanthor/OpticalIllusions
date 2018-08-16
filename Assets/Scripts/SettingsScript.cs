@@ -18,7 +18,7 @@ public class SettingsScript : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-	    enableVR = true;
+        enableVR = false;
         UnityEngine.XR.XRSettings.enabled = true;
         playerVR = GameObject.Find("PlayerVR");
         fpsController = GameObject.Find("FPSController");
@@ -33,6 +33,7 @@ public class SettingsScript : MonoBehaviour
         playerVR.SetActive(true);
         fpsController.SetActive(false);
 	    floor.GetComponent<Collider>().enabled = false;
+        TurnVR();
 	}
 	
 	// Update is called once per frame

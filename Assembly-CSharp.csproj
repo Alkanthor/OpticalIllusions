@@ -138,6 +138,8 @@
     <Compile Include="Assets\Scripts\LightsScript.cs" />
     <Compile Include="Assets\Scripts\MenuScript.cs" />
     <Compile Include="Assets\Scripts\MirrorReflection.cs" />
+    <Compile Include="Assets\Scripts\OpenvibeASConnection.cs" />
+    <Compile Include="Assets\Scripts\OVStimCodes.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\RotateScript.cs" />
     <Compile Include="Assets\Scripts\SceneFlowScript.cs" />

@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4458782876265076}
   - component: {fileID: 114671009103211282}
   - component: {fileID: 114129726733007508}
+  - component: {fileID: 114361665859892506}
   m_Layer: 0
   m_Name: Settings
   m_TagString: Untagged
@@ -56,6 +57,22 @@ MonoBehaviour:
   lightsScript: {fileID: 0}
   sculptureScript: {fileID: 0}
   modelIndex: 0
+  doOpenvibeASConnection: 1
+--- !u!114 &114361665859892506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1488322518033088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7f245cdb74c3c4ebca1253fbac4ba0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conName: openvibe
+  conHost: 127.0.0.1
+  conPort: 15361
+  socketReady: 0
 --- !u!114 &114671009103211282
 MonoBehaviour:
   m_ObjectHideFlags: 1

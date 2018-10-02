@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class SettingsScript : MonoBehaviour
 {
@@ -10,31 +11,30 @@ public class SettingsScript : MonoBehaviour
 
     private GameObject playerVR;
     private GameObject fpsController;
+    public GameObject vrHead;
+    public Vector3 initPoition;
 
     private GameObject floor;
 
 	// Use this for initialization
 	void Start ()
 	{
-        enableVR = false;
-        UnityEngine.XR.XRSettings.enabled = true;
+        enableVR = true;
+        XRSettings.enabled = true;
         playerVR = GameObject.Find("PlayerVR");
         fpsController = GameObject.Find("FPSController");
         floor = GameObject.Find("floor");
-
-        playerVR.SetActive(true);
-        fpsController.SetActive(false);
-	    floor.GetComponent<Collider>().enabled = false;
+        vrHead = GameObject.Find("Camera (eye)");
+        InputTracking.disablePositionalTracking = true;
         TurnVR();
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    }
+
+    // Update is called once per frame
+    void Update ()
 	{
 	    if (Input.GetKeyDown(KeyCode.Space))
 	    {
 	        enableVR = !enableVR;
-            UnityEngine.XR.XRSettings.enabled = !UnityEngine.XR.XRSettings.enabled;
             TurnVR();
         }
     }
@@ -44,12 +44,15 @@ public class SettingsScript : MonoBehaviour
         if (enableVR)
         {
             playerVR.SetActive(true);
+            XRSettings.enabled = true;
             fpsController.SetActive(false);
             floor.GetComponent<Collider>().enabled = false;
+            vrHead.transform.localPosition = new Vector3(0.0f, 1.55f, 0.0f);
         }
         else
         {
             playerVR.SetActive(false);
+            XRSettings.enabled = false;
             fpsController.SetActive(true);
             floor.GetComponent<Collider>().enabled = true;
         }

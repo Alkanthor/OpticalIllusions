@@ -102,7 +102,7 @@ public class SceneFlowScript : MonoBehaviour
             {
                 ovconn.send(OVStimCodes.OVTK_StimulationId_ExperimentStop);
                 Debug.Log("Experiment end");
-                Application.LoadLevel("Menu");
+                //Application.LoadLevel("Menu");
             }
             SetAnimator();
         }

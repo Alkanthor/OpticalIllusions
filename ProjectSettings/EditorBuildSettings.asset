@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: a63d7e7d69277f84bac68660a8467625
-  - enabled: 1
     path: Assets/Scenes/AmbiguousCylinders.unity
     guid: ed28e583cc75e244d81a125073db6379
   - enabled: 1
@@ -29,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/YESorNO.unity
     guid: dd30b50aea3682b45bf2c070a0889165
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: a63d7e7d69277f84bac68660a8467625
   m_configObjects: {}

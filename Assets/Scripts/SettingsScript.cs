@@ -9,8 +9,8 @@ public class SettingsScript : MonoBehaviour
 
     public bool enableVR;
 
-    private GameObject playerVR;
-    private GameObject fpsController;
+    public GameObject playerVR;
+    public GameObject fpsController;
     public GameObject vrHead;
     public Vector3 initPoition;
 
@@ -37,6 +37,8 @@ public class SettingsScript : MonoBehaviour
 	        enableVR = !enableVR;
             TurnVR();
         }
+        vrHead.transform.localPosition = new Vector3(0.0f, 1.55f, 0.0f);
+
     }
 
     private void TurnVR()

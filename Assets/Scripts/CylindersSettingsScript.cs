@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class CylindersSettingsScript : SettingsScript {
 
-    private GameObject VrMirror;
-    private GameObject FpsMirror;
+    public GameObject VrMirror;
+    public GameObject FpsMirror;
+    private SettingsScript settings;
 
 
     // Use this for initialization
@@ -13,16 +14,18 @@ public class CylindersSettingsScript : SettingsScript {
          VrMirror = GameObject.Find("VRmirror");
         FpsMirror = GameObject.Find("FPSmirror");
 
-        VrMirror.SetActive(enableVR);
-        FpsMirror.SetActive(!enableVR);
+        settings = GameObject.Find("Settings").GetComponent<SettingsScript>();
+
+        VrMirror.SetActive(settings.enableVR);
+        FpsMirror.SetActive(!settings.enableVR);
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-                VrMirror.SetActive(enableVR);
-                FpsMirror.SetActive(!enableVR);
+                VrMirror.SetActive(settings.enableVR);
+                FpsMirror.SetActive(!settings.enableVR);
         }
     }
 }

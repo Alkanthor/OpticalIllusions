@@ -1,14 +1,14 @@
 WindowsStandalone
 PlayerPath?
-D:/user_area/xgluszny/OpticalIllusions/Build/VRbuild/SteamVR.exe
+D:/User_Area/xgluszny/OpticalIllusions/Build/VRbuild/SteamVR.exe
 SceneListBegin?
 Assets/Scenes/AmbiguousCylinders.unity
 Assets/Scenes/AmesRoom.unity
 Assets/Scenes/FollowingEyes.unity
 Assets/Scenes/MagneticSlopes.unity
+Assets/Scenes/YESorNO.unity
 Assets/Scenes/PenroseTriangle.unity
 Assets/Scenes/Vases.unity
-Assets/Scenes/YESorNO.unity
 Assets/Scenes/Menu.unity
 SceneListEnd?
 bb2dc810ac8614dec49a546caf3453df Assembly-CSharp.dll:.SteamVR_Ears

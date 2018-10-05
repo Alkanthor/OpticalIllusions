@@ -1,4 +1,4 @@
-﻿static class OVStimCodes
+﻿public static class OVStimCodes
 {
     public const ulong OVTK_StimulationId_ExperimentStart = 0x00008001;
     public const ulong OVTK_StimulationId_ExperimentStop = 0x00008002;

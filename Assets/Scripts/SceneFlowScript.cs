@@ -43,16 +43,9 @@ public class SceneFlowScript : MonoBehaviour
         {
             Debug.Log("Attempting to connect..");
             ovconn.setup();
-            ovconn.send(codes[new Vector2Int(Application.loadedLevel, 1)]);
-            Debug.Log("Code sent: " + codes[new Vector2Int(Application.loadedLevel, 1)]);
+            ovconn.send((ulong)SceneManager.GetActiveScene().buildIndex * 10+1);
+            //Debug.Log("Code sent: " + codes[new Vector2Int(Application.loadedLevel, 1)]);
         }
-    }
-
-    IEnumerator sendinit()
-    {
-        yield return new WaitForSeconds(1);
-        ovconn.send(OVStimCodes.OVTK_StimulationId_ExperimentStart);
-        Debug.Log("Experiment start");
     }
 
 
@@ -67,7 +60,6 @@ public class SceneFlowScript : MonoBehaviour
         if (doOpenvibeASConnection)
         {
             connectOV();
-            StartCoroutine(sendinit());
         }
 
         Debug.Log("animate");
@@ -96,12 +88,12 @@ public class SceneFlowScript : MonoBehaviour
             if (modelIndex < sculptureScript.sculptures.Length)
             {
                 sculptureScript.NextModel();
-                ovconn.send(codes[new Vector2Int(Application.loadedLevel, modelIndex + 1)]);
-                Debug.Log("Code sent: " + codes[new Vector2Int(Application.loadedLevel, modelIndex + 1)]);
+                ovconn.send((ulong)SceneManager.GetActiveScene().buildIndex * 10+(ulong)(modelIndex+1));
+                //Debug.Log("Code sent: " + codes[new Vector2Int(Application.loadedLevel, modelIndex + 1)]);
             }
             else
             {
-                ovconn.send(OVStimCodes.OVTK_StimulationId_ExperimentStop);
+                //ovconn.send(OVStimCodes.OVTK_StimulationId_ExperimentStop);
                 Debug.Log("Experiment end");
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }

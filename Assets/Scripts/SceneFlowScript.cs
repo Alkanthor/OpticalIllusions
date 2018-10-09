@@ -95,6 +95,7 @@ public class SceneFlowScript : MonoBehaviour
             {
                 //ovconn.send(OVStimCodes.OVTK_StimulationId_ExperimentStop);
                 Debug.Log("Experiment end");
+                ovconn.send((ulong)SceneManager.GetActiveScene().buildIndex * 10 + 9);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
             SetAnimator();

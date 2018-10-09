@@ -19,7 +19,7 @@ public class SettingsScript : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-        enableVR = false;
+        enableVR = true;
         XRSettings.enabled = true;
         playerVR = GameObject.Find("PlayerVR");
         fpsController = GameObject.Find("FPSController");

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/YESorNO.unity
+- path: Assets/Scenes/AmbiguousCylinders.unity
   isLoaded: 1
   isActive: 1

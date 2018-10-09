@@ -19,7 +19,7 @@ public class SettingsScript : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-        enableVR = true;
+        enableVR = false;
         XRSettings.enabled = true;
         playerVR = GameObject.Find("PlayerVR");
         fpsController = GameObject.Find("FPSController");
@@ -57,6 +57,7 @@ public class SettingsScript : MonoBehaviour
             XRSettings.enabled = false;
             fpsController.SetActive(true);
             floor.GetComponent<Collider>().enabled = true;
+            Cursor.visible = false;
         }
     }
 }

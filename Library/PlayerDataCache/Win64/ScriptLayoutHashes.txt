@@ -1,6 +1,6 @@
 WindowsStandalone
 PlayerPath?
-D:/user_area/xgluszny/OpticalIllusions/Build/VRbuild/SteamVR.exe
+D:/User_Area/xgluszny/OpticalIllusions/Build/vr2/SteamVR.exe
 SceneListBegin?
 Assets/Scenes/AmbiguousCylinders.unity
 Assets/Scenes/AmesRoom.unity
